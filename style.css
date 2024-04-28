@@ -551,7 +551,7 @@ footer {
 
 .sebet__hover__card {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 15px;
     gap: 20px;
@@ -580,8 +580,9 @@ footer {
 .sebet__hover__card__right{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 5px;
+    width: 127px;
 }
 
 .sebet__hover__card__right button{
