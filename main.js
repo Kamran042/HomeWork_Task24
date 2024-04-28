@@ -4,7 +4,9 @@ const mainSection = document.querySelector(".filter__container__grid");
 const btnContainer = document.querySelector(".btn__container");
 const btns = document.querySelectorAll(".filter__btn");
 const sebetCards = document.querySelector(".sebet__hover__cards");
-const totalPrice = document.querySelector('.sebet__hover__button__total_price')
+const totalPrice = document.querySelector(".sebet__hover__button__total_price_span");
+const totalPriceHeader = document.querySelector(".sebet__hover__button__total_price_span_header");
+const korzinaLength = document.querySelector(".korzina__length");
 let korzina;
 
 if (localStorage.getItem("korzina")) {
@@ -129,17 +131,15 @@ function renderIUKorzina() {
         <h2>${korzina[i].name}</h2>
         <p>${korzina[i].count} X $${korzina[i].price}</p>
       </div>
-      <button onclick="deleteToKorzina(${
-        korzina[i].id
-      })"><i class="fa-solid fa-x"></i></button>
+      <button onclick="deleteToKorzina(${korzina[i].id})"><i class="fa-solid fa-x"></i></button>
     </div>
   </div>
     `;
   }
 }
 renderIUKorzina();
-totalPriceJS()
-
+totalPriceJS();
+korzinaLenghtToHTML();
 
 function cardToLocal(id) {
   fetch("./products.json")
@@ -150,11 +150,13 @@ function cardToLocal(id) {
         let target = data.find((item) => item.id == id);
         korzina.push(target);
         renderIUKorzina();
-        totalPriceJS()
+        totalPriceJS();
+        korzinaLenghtToHTML();
       } else {
         targetOfKorzina.count++;
         renderIUKorzina();
-        totalPriceJS()
+        totalPriceJS();
+        korzinaLenghtToHTML();
       }
       localStorage.setItem("korzina", JSON.stringify(korzina));
     });
@@ -166,16 +168,19 @@ function deleteToKorzina(id) {
   korzina.splice(targetOfIndex, 1);
   localStorage.setItem("korzina", JSON.stringify(korzina));
   renderIUKorzina();
-  totalPriceJS()
+  totalPriceJS();
+  korzinaLenghtToHTML();
 }
 
-function totalPriceJS(){
-  let totalKorzinaSumm = 0
+function totalPriceJS() {
+  let totalKorzinaSumm = 0;
   for (let i = 0; i < korzina.length; i++) {
-    totalKorzinaSumm+=korzina[i].count*korzina[i].price    
+    totalKorzinaSumm += korzina[i].count * korzina[i].price;
   }
-  totalPrice.innerHTML=`
-  <p>PRICE:</p>
-  <span>$${totalKorzinaSumm}</span>
-  `
+  totalPrice.innerHTML = `$${totalKorzinaSumm}`;
+  totalPriceHeader.innerHTML = `$${totalKorzinaSumm}`
+}
+
+function korzinaLenghtToHTML() {
+  korzinaLength.innerHTML = `${korzina.length}`;
 }

@@ -437,7 +437,7 @@ footer {
     width: 100%;
     height: 380px;
     transition: transform 0.3s ease;
-
+    cursor: pointer;
 }
 
 .grid__card__img img {
