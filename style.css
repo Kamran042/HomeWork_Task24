@@ -343,6 +343,14 @@ footer {
     padding-top: 15px;
 }
 
+.footer__bottom__box__left span{
+    transition: all 0.4s ease;
+}
+
+.footer__bottom__box__left span:hover{
+    color: #F34F3F;
+}
+
 .footer__bottom__box__left p {
     font-size: 12px;
     color: #AFAFAF;
@@ -371,12 +379,11 @@ footer {
 }
 
 .footer__bottom__box__right p{
-    transition: all 0.4 ease;
+    transition: all 0.4s ease;
 }
 
 .footer__bottom__box__right p:hover{
     color: #F34F3F;
-
 }
 
 .filter__container {
