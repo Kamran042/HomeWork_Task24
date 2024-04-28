@@ -1,0 +1,100 @@
+[
+    {
+      "id": 1,
+      "name": "ROCK SOAPWORT",
+      "category":"cactus",
+      "price": 259,
+      "count":1,
+      "img": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-9-img.jpg"
+    },
+    {
+      "id": 2,
+      "name": "WILD CACTUS",
+      "category":"cactus",
+      "price": 159,
+      "count":1,
+      "img": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-5-img.jpg"
+    },
+    {
+      "id": 3,
+      "name": "CACTUS IN ORANGE",
+      "category":"cactus",
+      "price": 259,
+      "count":1,
+      "img": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-3-img.jpg"
+    },
+    {
+      "id": 4,
+      "name": "WILD ROSES",
+      "category":"exotic",
+      "price": 259,
+      "count":1,
+      "img": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-7-img.jpg"
+    },
+    {
+      "id": 5,
+      "name": "COLORFUL TULIPS",
+      "category":"exotic",
+      "price": 350,
+      "count":1,
+      "img": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-6-img.jpg"
+    },
+    {
+      "id": 6,
+      "name": "ORANGE AMARYLLIS",
+      "category":"popular",
+      "price": 259,
+      "count":1,
+      "img": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-2-img.jpg"
+    },
+    {
+      "id": 7,
+      "name": "SUMMER SAVORY",
+      "category":"greens",
+      "price": 259,
+      "count":1,
+      "img": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-8-img.jpg"
+    },
+    {
+      "id": 8,
+      "name": "PINK FLOWER TREE",
+      "category":"popular",
+      "price": 259,
+      "count":1,
+      "img": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-4-img.jpg"
+    }
+    ,
+    {
+      "id": 9,
+      "name": "SCHEFFLERA",
+      "category":"greens",
+      "price": 259,
+      "count":1,
+      "img": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-1-img.jpg"
+    }
+    ,
+    {
+      "id": 10,
+      "name": "COLORFUL TULIPS",
+      "category":"various",
+      "price": 259,
+      "count":1,
+      "img": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-6-img.jpg"
+    },
+    {
+      "id": 11,
+      "name": "FOXGLOVE FLOWER",
+      "category":"winter",
+      "price": 259,
+      "count":1,
+      "img": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg"
+    },
+    {
+      "id": 12,
+      "name": "SWEET ALLYSUM",
+      "category":"various",
+      "price": 259,
+      "count":1,
+      "img": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-10-img.jpg"
+    }
+  ]
