@@ -345,6 +345,7 @@ footer {
 
 .footer__bottom__box__left span{
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 
 .footer__bottom__box__left span:hover{
